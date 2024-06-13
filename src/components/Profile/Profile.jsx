@@ -1,32 +1,27 @@
-export default function Profile() {
-  return (
-    <>
-      <div>
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-            alt="User avatar"
-          />
-          <p>Petra Marica</p>
-          <p>@pmarica</p>
-          <p>Salvador, Brasil</p>
-        </div>
+import css from "../Profile/Profile.module.css";
 
-        <ul>
-          <li>
-            <span>Followers</span>
-            <span>1000</span>
-          </li>
-          <li>
-            <span>Views</span>
-            <span>2000</span>
-          </li>
-          <li>
-            <span>Likes</span>
-            <span>3000</span>
-          </li>
-        </ul>
-      </div>
-    </>
+export default function Profile({ name, tag, location, imageUrl, stats }) {
+  return (
+    <div className={css.profileCard}>
+      <img className={css.profileAvatar} src={imageUrl} alt="User avatar" />
+      <p className={css.profileName}>{name}</p>
+      <p className={css.profileDimText}>@{tag}</p>
+      <p className={css.profileDimText}>{location}</p>
+
+      <ul className={css.profileStatsList}>
+        <li className={css.profileStatsItem}>
+          <span>Followers</span>
+          <span className={css.profileStatsValue}>{stats.followers}</span>
+        </li>
+        <li className={css.profileStatsItem}>
+          <span>Views</span>
+          <span className={css.profileStatsValue}>{stats.views}</span>
+        </li>
+        <li className={css.profileStatsItem}>
+          <span>Likes</span>
+          <span className={css.profileStatsValue}>{stats.likes}</span>
+        </li>
+      </ul>
+    </div>
   );
 }
