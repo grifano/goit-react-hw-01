@@ -1,0 +1,26 @@
+.table,
+.tableRow,
+.tableCel {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table {
+  border: 1px inset black;
+}
+.tableRow {
+  border: 1px solid black;
+}
+.tableRow.isHead {
+  background-color: black;
+  color: white;
+}
+.tableCel {
+  width: 150px;
+  text-align: center;
+}
+.tableCel:not(:last-child) {
+  border-right: 1px solid black;
+}
+.tableRow:nth-child(even) {
+  background-color: #ccc;
+}
