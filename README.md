@@ -1,6 +1,6 @@
 <img src="./src/assets/react-logo.svg" alt="react logo" width="10%"/>
 
-# GOIT - React Components
+# React Components
 
 ## Module 1: Components, Props, Vite
 
