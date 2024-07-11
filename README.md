@@ -1,4 +1,4 @@
-<img src="https://customcodefactory.com/wp-content/uploads/2019/11/designdevelopmentfacebookframeworkmobilereacticon-1320165723839064798.png" alt="java script logo" width="10%"/>
+<img src="./src/assets/react-logo.svg" alt="react logo" width="10%"/>
 
 # React
 
