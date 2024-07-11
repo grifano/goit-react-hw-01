@@ -1,52 +1,93 @@
 <img src="./src/assets/react-logo.svg" alt="react logo" width="10%"/>
 
-# React
+# GOIT - React Components
 
 ## Module 1: Components, Props, Vite
 
-<img src="./src/assets/screenshot.webp" alt="profile card, list of cards with animals icons" width="50%"/>
+<img src="./src/assets/screenshot.webp" alt="screenshot app" width="50%"/>
 
-### Task 1 - Social Media Profile Component\*\*
+## Functionality Summary
 
-1.  Create a <Profile> component that accepts the following props: name, tag, location, image, and stats.
+This repository contained the implementation of a movie search application using React with routing. The project was created with Vite, utilized React Router for routing, Axios for HTTP requests, and styled components with CSS modules. The application had several key functionalities, which are summarized below:
 
-2.  Structure the component to display the user's information dynamically, based on the passed props.
+### Profile Component
 
-3.  Move the user data into a JSON file (userData.json) in the src directory and format it in JSON.
+The `Profile` component displays user information including their name, tag, location, avatar, and activity stats.
 
-4.  Import the user data from the JSON file into the App component.
+- **Props**:
+  - `name`: User's name.
+  - `tag`: User's social media tag.
+  - `location`: User's location.
+  - `image`: URL of the user's avatar.
+  - `stats`: Object containing user activity statistics (followers, views, likes).
 
-5.  Pass the imported data as props to the <Profile> component within the App component.
+### FriendList Component
 
-### Task 2 - Friend List Component\*\*
+The `FriendList` component displays a list of friends, each represented by a `FriendListItem` component.
 
-1.  Create a <FriendList> component that accepts a friends prop, which is an array of friend objects.
+- **Props**:
+  - `friends`: Array of friend objects, each containing an `avatar`, `name`, `isOnline` status, and an `id`.
 
-2.  Create a <FriendListItem> component that accepts avatar, name, and isOnline props.
+### TransactionHistory Component
 
-3.  In <FriendList>, render a list of <FriendListItem> components based on the friends array.
+The `TransactionHistory` component displays a table of user transactions.
 
-4.  Conditionally render the text and style in <FriendListItem> based on the isOnline prop.
+- **Props**:
+  - `items`: Array of transaction objects, each containing an `id`, `type`, `amount`, and `currency`.
 
-5.  Move the friends' data into a JSON file (friends.json) in the src directory and format it in JSON.
+## Component Structure
 
-6.  Import the friends' data from the JSON file into the App component.
+- Each component is organized in its own folder within `src/components`.
+- Default exports are used for all components.
+- JSON files are used to manage data for components, keeping the main `App` component clean.
 
-7.  Pass the imported data as props to the <FriendList> component within the App component.
+## Code Quality
 
-### Task 3 - Transaction History Component\*\*
+- Ensured no errors or warnings in the console.
+- Maintained clean and understandable JavaScript code using Prettier for formatting.
+- Styling was performed using CSS modules.
 
-1.  Create a <TransactionHistory> component that accepts an items prop, which is an array of transaction objects.
+## Live Demo
 
-2.  Structure the component to display a table with the transaction data, including columns for Type, Amount, and Currency.
+- **Source Files**: [GitHub Repository](https://github.com/grifano/goit-react-hw-01)
+- **Working Page**: [Vercel Deployment](https://goit-react-hw-01-sandy-zeta.vercel.app/)
 
-3.  Move the transactions' data into a JSON file (transactions.json) in the src directory and format it in JSON.
+## Project Setup
 
-4.  Import the transactions' data from the JSON file into the App component.
+1. Clone the repository.
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
-5.  Pass the imported data as props to the <TransactionHistory> component within the App component.
+## Component List
 
----
+### Profile
+
+- **File Structure**:
+  - `src/components/Profile/Profile.jsx`
+  - `src/components/Profile/Profile.module.css`
+- **Functionality**:
+  - Displays user details and activity statistics.
+  - Imports user data from `userData.json`.
+
+### FriendList
+
+- **File Structure**:
+  - `src/components/FriendList/FriendList.jsx`
+  - `src/components/FriendList/FriendList.module.css`
+  - `src/components/FriendListItem/FriendListItem.jsx`
+  - `src/components/FriendListItem/FriendListItem.module.css`
+- **Functionality**:
+  - Displays a list of friends with their online status.
+  - Imports friend data from `friends.json`.
+
+### TransactionHistory
+
+- **File Structure**:
+  - `src/components/TransactionHistory/TransactionHistory.jsx`
+  - `src/components/TransactionHistory/TransactionHistory.module.css`
+- **Functionality**:
+  - Displays a table of transactions.
+  - Imports transaction data from `transactions.json`.
 
 ## Acknowledgments
 
