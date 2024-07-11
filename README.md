@@ -4,7 +4,7 @@
 
 ## Module 1: Components, Props, Vite
 
-<img src="./src/assets/screenshot.png" alt="profile card, list of cards with animals icons" width="50%"/>
+<img src="./src/assets/screenshot.webp" alt="profile card, list of cards with animals icons" width="50%"/>
 
 ### Task 1 - Social Media Profile Component\*\*
 
